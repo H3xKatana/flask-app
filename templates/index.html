@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Delicious Recipes</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
+    
+    <script src="https://kit.fontawesome.com/ad5cc6e992.js" crossorigin="anonymous"></script>
+    
+
+    </head>
+    <body background="{{ url_for('static', filename='images/bg.jpg') }}">
+        <div class = "main-title">
+            <h1 align = "center" > Recipe Paradise</h1>
+        </div>
+        <div class = "sub-tabs">
+            <h2> <a href="{{url_for('index')}}"> Home </a></h2>
+            <h2> <a href="{{url_for('trending')}}"> Trending Recipes </a> </h2>
+            <h2> <a href="{{url_for('classics')}}"> Classic Recipes </a> </h2>
+            <h2> <a href="{{url_for('lunch')}}"> Lunch Time </a> </h2>
+            <h2> <a href="{{url_for('desserts')}}"> Desserts </a> </h2>
+        </div>
+
+        <div class="search-bar-body">
+            <div class="search-box">
+                <form action="/" method="POST" id="search-form">
+                    <button type = "submit "class="search-button" form="search-form" name = 'button'>
+                        <i class="fas fa-search"> </i>
+                    
+                    </button>
+                    <input type="text" class="search-input" placeholder="Type To Search Recipes..." name = 'search-textbox'>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Delicious Recipes</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/searchpagestyles.css') }}">
+    <script src="https://kit.fontawesome.com/ad5cc6e992.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        let text ='{{ text }}';
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascripts/search.js') }}"></script>
+
+    </head>
+    <body background="{{ url_for('static', filename='images/bg.jpg') }}">
+        <div class = "main-title">
+            <h1 align = "center"  > Recipe Paradise</h1>
+        </div>
+        <div class = "sub-tabs">
+            <h2> <a href="{{url_for('index')}}"> Home </a></h2>
+            <h2> <a href="{{url_for('trending')}}"> Trending Recipes </a> </h2>
+            <h2> <a href="{{url_for('classics')}}"> Classic Recipes </a> </h2>
+            <h2> <a href="{{url_for('lunch')}}"> Lunch Time </a> </h2>
+            <h2> <a href="{{url_for('desserts')}}"> Dessert </a> </h2>
+        </div>
+        
+        
+        
+        
+        <div class="search-bar-body">
+            <div class="search-box">
+                <form action="/" method="POST" id="search-form">
+                    <button type = "submit "class="search-button" form="search-form" name = 'button'>
+                        <i class="fas fa-search"> </i>
+                        
+                    </button>
+                    <input type="text" class="search-input" placeholder="Type To Search Recipes..." name = 'search-textbox'>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="search-page-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Sort By</th> <!-- <th onclick="SortColumn('name')">Name</th>-->
+                        
+                    </tr>
+                    <tr>
+                        <th >Calories</th>
+                        <th >Time</th>
+                        <th >Diet Type</th>
+                    </tr>
+                </thead>
+                <tbody id="search-table">
+                    <tr><td onclick="sortByCal(event)"  data-arg1 =0 data-arg2 =200>0-200</td><td onclick="sortByTime(event)"  data-arg1 =0 data-arg2 =60>0-60 Minutes</td><td onclick="sortByDiet(event)"  data-arg1 ="balanced">Balanced</td></tr><!--tr><td  style="cursor:pointer" > <a  style="text-decoration:none" href= '${SERVER_URL}${row_data.page_link}'>${row_data.name}</a></td><td>${row_data.rating}</td><td>${row_data.cost}</td><td>${row_data.time}</td></tr-->
+                    <tr><td onclick="sortByCal(event)"  data-arg1 =201 data-arg2 =1000>201-1000</td><td onclick="sortByTime(event)"  data-arg1 =61 data-arg2 =200>61-200 Minutes</td><td onclick="sortByDiet(event)"  data-arg1 ="high-protein">High Protein</td></tr>
+                    <tr><td onclick="sortByCal(event)"  data-arg1 =1001 data-arg2 =2000>1001-2000</td><td onclick="sortByTime(event)"  data-arg1 =201 data-arg2 =500>201-500 Minutes</td><td onclick="sortByDiet(event)"  data-arg1 ="low-fat">Low Fat </td></tr>
+                    <tr><td onclick="sortByCal(event)"  data-arg1 =2001 data-arg2 =12000>2000+</td><td onclick="sortByTime(event)"  data-arg1 =501 data-arg2 =10000>500+ Minutes</td><td onclick="sortByDiet(event)"  data-arg1 ="low-carb">Low Carb</td></tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+
+        
+        <div class="search-result" id="search-results-body"> 
+            <!--div class="item">
+                <img src="{{ url_for('static', filename='images/payasam.jpg') }}" alt="Image of Payasam" border = 3 >
+                <div class="flex-container">
+                    <h1 class="title">This is a recipe item</h1>
+                    <a class="view-btn" href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 120</p>
+            </div> 
+            
+            
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/payasam.jpg') }}" alt="Image of Payasam" border = 3 >
+                <div class="flex-container">
+                    <h1 class="title">This is a recipe item</h1>
+                    <a class="view-btn" href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 120</p>
+            </div> 
+            
+            
+            
+            
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/payasam.jpg') }}" alt="Image of Payasam" border = 3 >
+                <div class="flex-container">
+                    <h1 class="title">This is a recipe item</h1>
+                    <a class="view-btn" href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 120</p>
+                </div--> 
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+        <!--
+        <div class="search-bar-body">
+            <div class="search-box">
+                <form action="/" method="POST" id="search-form">
+                    <button type = "submit "class="search-button" form="search-form" name = 'button'>
+                        <i class="fas fa-search"> </i>
+                    
+                    </button>
+                    <input type="text" class="search-input" placeholder="Type To Search Recipes..." name = 'search-textbox'>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="search-page-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="SortColumn('name')">Name</th>
+                        <th onclick="SortColumn('rating')">Rating</th>
+                        <th onclick="SortColumnCost('cost')">Cost</th>
+                        <th onclick="SortColumn('time')">Time</th>
+                    </tr>
+                </thead>
+                <tbody id="search-table">
+
+                </tbody>
+            </table>
+            
+        </div>-->
+
+
+
+
+
+    </body>
+</html>
+

@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Delicious Recipes</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="/static/stylesheets/searchpagestyles.css">
+    <script src="https://kit.fontawesome.com/ad5cc6e992.js" crossorigin="anonymous"></script>
+    <!--script type="text/javascript">
+        let data ='{"recipes": []}';
+        let text ='classic';
+    </script>
+    <script type="text/javascript" src="/static/javascripts/search.js"></script-->
+
+    </head>
+    <body background="/static/images/bg.jpg">
+        <div class = "main-title">
+            <h1 align = "center" > Recipe Paradise</h1>
+        </div>
+        <div class = "sub-tabs">
+            <h2> <a href="{{url_for('index')}}"> Home </a></h2>
+            <h2> <a href="{{url_for('trending')}}"> Trending Recipes </a> </h2>
+            <h2> <a href="{{url_for('classics')}}"> Classic Recipes </a> </h2>
+            <h2> <a href="{{url_for('lunch')}}"> Lunch Time </a> </h2>
+            <h2> <a href="{{url_for('desserts')}}"> Desserts </a> </h2>
+        </div>
+        
+        <div class="search-result" id="search-results-body">
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/208/208e8e9269e4247158705e51ad02594f.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Dessert-Wine-Poached Pears</h1>
+                <a class="view-btn" target="_blank" href="http://www.donnahay.com.au/recipes/sweets/fruit/dessert-wine-poached-pears">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 399.30</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 4 beurre bosc pears, peeled and halved,1 vanilla bean, split and scraped,1½ cups (375ml) dessert wine,1½ cups (330g) caster (superfine) sugar</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/4e2/4e20931c2aa8783e3ef34bcf3781bb4b.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">French Apple Tart (Tarte Fine aux Pommes) [vegan]</h1>
+                <a class="view-btn" target="_blank" href="https://food52.com/recipes/32157-french-apple-tart-tarte-fine-aux-pommes-vegan">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 125.49</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 puff pastry,8.5 ounces dessert apples - for the applesauce,3-4 medium dessert apples,1 teaspoon vanilla extract,2 tablespoons Dairy free butter,2 ta...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/361/36103cca6b99241d7a772974590933fb.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Hollandaise sauce</h1>
+                <a class="view-btn" target="_blank" href="http://www.jamieoliver.com/recipes/eggs-recipes/hollandaise-sauce/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 200.60</p>
+              <p class="item-data">Time: 20 minutes </p>
+              <p class="item-data">Diet Type: Low-Carb,Low-Sodium</p>
+              <p class="item-data">Ingredients: 150 g unsalted butter,2 large free-range egg yolks,1 dessert spoon white wine vinegar,1 lemon</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/2d9/2d961fa890e23add00d167484bd50162.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Grapefruit Dessert</h1>
+                <a class="view-btn" target="_blank" href="https://www.marthastewart.com/632489/grapefruit-dessert">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 133.45</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1/2 cup light-brown sugar,2 large ruby-red grapefruits, halved, room temperature</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/3c3/3c3b64642fd1bef866b700bf33ba3c79.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Moroccan Orange Dessert</h1>
+                <a class="view-btn" target="_blank" href="http://simplyrecipes.com/recipes/moroccan_orange_dessert/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 135.90</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: High-Fiber,Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 3-4 oranges,1/4 cup orange flower water,1-2 Tbsp powdered sugar,1-2 teaspoons cinnamon</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/4d9/4d9084cbc170789caa9e997108b595de.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Catalan Chicken</h1>
+                <a class="view-btn" target="_blank" href="http://www.bonappetit.com/columns/breadwinner/article/how-to-get-your-kids-to-eat-sauce-let-them-cook-it-themselves">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 278.63</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Carb</p>
+              <p class="item-data">Ingredients: 1 whole 4-pound chicken, quartered,8 slices bacon,30 cloves garlic,3 lemons, peeled, rinds thinly sliced and reserved,½ cup Banyuls or another fortifi...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/341/3416154d6dbccc1286f2d9a7ddab6336.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Tuscan Zabaione</h1>
+                <a class="view-btn" target="_blank" href="http://honestcooking.com/tuscan-zabaione/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 139.06</p>
+              <p class="item-data">Time: 8 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 3 egg yolks,30 grams of fine white sugar,150 ml of vin santo (tuscan dessert wine),1 tsp of cinnamon, optional,1 shot of rum or brandy, optional</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/221/221443b7e5c809e16a83a37c6031f351.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Gooseberry Meringue Tart</h1>
+                <a class="view-btn" target="_blank" href="http://www.bbcgoodfood.com/recipes/3935/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 861.96</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: High-Fiber</p>
+              <p class="item-data">Ingredients: 1.0 tsp cornflour,50.0g butter,375.0g pack shortcrust pastry (preferably dessert pastry),100.0g light brown sugar,500.0g gooseberries,2 egg whites,100...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/5b1/5b16a5c94e32d2eae1ec000e7835a9e1.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Riz au Lait à la Framboise</h1>
+                <a class="view-btn" target="_blank" href="http://chocolateandzucchini.com/recipes/desserts/raspberry-rice-pudding-recipe/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 259.37</p>
+              <p class="item-data">Time: 233 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 1l fresh milk,125 g short-grain rice (carnaroli, arborio, any rice labelled "spécial dessert" in france),100 g sugar,1 tsp pure vanilla extract),150 g...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/531/531da84f07de4b5c07ce10d12970f057.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Vin Santo Zabaglione with Orange and Grapefruit</h1>
+                <a class="view-btn" target="_blank" href="https://www.epicurious.com/recipes/food/views/vin-santo-zabaglione-with-orange-and-grapefruit-104659">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 150.59</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 3 medium navel oranges,1 large pink or red grapefruit,3 tablespoons sugar,1 large egg,3 tablespoons vin santo or other sweet dessert wine,3/4 teaspoon...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/c56/c569247356e0d73160726cdbb565867c.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Peaches in Muscat</h1>
+                <a class="view-btn" target="_blank" href="http://www.cookstr.com/recipes/peaches-in-muscat">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 79.64</p>
+              <p class="item-data">Time: 15 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 4 ripe peaches,1 cup sweet Muscat wine or other good dessert wine,Heavy cream or ice cream for serving, optional</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/381/3819b050076c31aa8bda4277c135429e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Braised red cabbage with apples and sherry vinegar</h1>
+                <a class="view-btn" target="_blank" href="http://www.bbc.co.uk/food/recipes/braisedredcabbagewit_87606">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 156.72</p>
+              <p class="item-data">Time: 117 minutes </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 50g/2oz butter,1 medium onion, finely sliced,2 dessert apples, peeled, cored and sliced,1kg/2¼lb red cabbage, finely sliced,100g/4oz sultanas or raisi...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/2f3/2f3d0ca8938f61fc54b548419c586785.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Roasted Pears With Candied Celery</h1>
+                <a class="view-btn" target="_blank" href="http://www.sippitysup.com/roasted-pears-candied-celery">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 190.79</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 lemons,4 c cool water,1 c moscato dessert wine,0.75 c sugar,0.25 c apricot jam,4 firm bosc pears,6 large celery ribs, peeled and cut diagonally into...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/d4b/d4bec0c2368786ebd82b22c464527e4e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Cantaloupe Soup with Watermelon Garnish</h1>
+                <a class="view-btn" target="_blank" href="http://www.pbs.org/food/recipes/cantaloupe-soup-with-watermelon-garnish/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 138.87</p>
+              <p class="item-data">Time: 18 minutes </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 lb. peeled and diced cantaloupe,1 cup plain yogurt,1 cup orange juice,1/4 cup white dessert wine,6 tablespoons granulated white sugar,1/2 teaspoon f...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/aa2/aa2166ca61918987778555f2766252a8.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Plum?And?Honey Sabayon Gratins</h1>
+                <a class="view-btn" target="_blank" href="http://www.foodandwine.com/recipes/plum-and-honey-sabayon-gratins">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 183.34</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 tablespoons unsalted butter,6 tablespoons clover honey,5 large plums (1 1/2 pounds), quartered and pitted,3 large egg yolks,1/3 cup Moscato d'Asti o...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/b85/b858b48ca1a89a570a2658c47f0ecd79.jpeg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Cherry Lollipops</h1>
+                <a class="view-btn" target="_blank" href="https://www.foodnetwork.com/recipes/sandra-lee/cherry-lollipops-recipe-2047052">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 90.23</p>
+              <p class="item-data">Time: 20 minutes </p>
+              <p class="item-data">Diet Type: Balanced,Low-Sodium</p>
+              <p class="item-data">Ingredients: 3/4 cup granulated sugar,1/2 cup light corn syrup,1/4 cup butter,1 (3-ounce) box cherry gelatin dessert mix,Nonstick cooking spray</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/ac0/ac0aa1f2cbd0b25d922122138fed3bd5.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Dessert Napoleon</h1>
+                <a class="view-btn" target="_blank" href="https://www.realsimple.com/food-recipes/browse-all-recipes/dessert-napoleon">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 635.45</p>
+              <p class="item-data">Time: 30 minutes </p>
+              <p class="item-data">Diet Type: High-Fiber</p>
+              <p class="item-data">Ingredients: 2 tablespoons unsalted butter,1/2 cup honey,6 English muffins, halved,1 cup heavy cream,2 tablespoons confectioners' sugar,1 16-ounce bag frozen peach...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/ea2/ea2cc26fddea88e1c2ea9c40ce7d7464.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Dessert "Salsa"</h1>
+                <a class="view-btn" target="_blank" href="http://www.goodhousekeeping.com/food-recipes/a6522/dessert-salsa-4375/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 46.06</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 tbsp. honey,1 tbsp. fresh lemon juice,1 c. canned pineapple chunks,1 c. strawberries,½ c. raspberries</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/015/015c54d9dd1dea0974375930df823f3c.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Nordic Quinoa Salad</h1>
+                <a class="view-btn" target="_blank" href="http://www.thedailymeal.com/recipes/nordic-quinoa-salad-recipe-0">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 123.37</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1/2 Cup red quinoa,3 1/2 Cups kale,3 1/2 Cups red cabbage,1 celery stalk,3 dessert apples, such as Cox,1/2 Cup walnut halves</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/1a1/1a12b286eada83108bf3a68d671d4ab2.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Cantaloupe and Black Pepper Granita</h1>
+                <a class="view-btn" target="_blank" href="https://www.epicurious.com/recipes/food/views/cantaloupe-and-black-pepper-granita-51242080">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 92.26</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 pounds cantaloupe, rind and seeds removed, coarsely chopped,1/2 cup sugar,1/4 cup Muscat de Beaumes de Venise or other sweet dessert wine,1/4 teaspo...</p>
+            </div>
+          </div>

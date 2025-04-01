@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Delicious Recipes</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="/static/stylesheets/searchpagestyles.css">
+    <script src="https://kit.fontawesome.com/ad5cc6e992.js" crossorigin="anonymous"></script>
+    <!--script type="text/javascript">
+        let data ='{"recipes": []}';
+        let text ='classic';
+    </script>
+    <script type="text/javascript" src="/static/javascripts/search.js"></script-->
+
+    </head>
+    <body background="/static/images/bg.jpg">
+        <div class = "main-title">
+            <h1 align = "center" > Recipe Paradise</h1>
+        </div>
+        <div class = "sub-tabs">
+          <h2> <a href="{{url_for('index')}}"> Home </a></h2>
+          <h2> <a href="{{url_for('trending')}}"> Trending Recipes </a> </h2>
+          <h2> <a href="{{url_for('classics')}}"> Classic Recipes </a> </h2>
+          <h2> <a href="{{url_for('lunch')}}"> Lunch Time </a> </h2>
+          <h2> <a href="{{url_for('desserts')}}"> Desserts </a> </h2>
+        </div>
+        
+        
+        
+        
+
+        
+        <div class="search-result" id="search-results-body">
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/8f4/8f496a825ec140317b38235c828dcea9.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Beef Meatballs</h1>
+                <a class="view-btn" target="_blank" href="https://www.epicurious.com/recipes/food/views/classic-beef-meatballs-369151">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 149.18</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Carb</p>
+              <p class="item-data">Ingredients: 2 tablespoons olive oil,2 pounds 80% lean ground beef,1 cup ricotta cheese,2 large eggs,1/2 cup bread crumbs,1/4 cup chopped fresh parsley,1 tablespoo...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/f7e/f7eaa9fb5569cdc31444309854e775f1" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Margherita Pizza</h1>
+                <a class="view-btn" target="_blank" href="https://www.marthastewart.com/1528964/classic-margherita-pizza">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 225.36</p>
+              <p class="item-data">Time: 20 minutes </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 1 recipe Classic Pizza Dough,Semolina flour or fine cornmeal, for dusting,Extra-virgin olive oil, for drizzling,Kosher salt and freshly ground pepper,...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/7df/7df9c6d152779593d791424fa27e3c41.jpeg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Johnsonville Classic Meatballs and Spaghetti</h1>
+                <a class="view-btn" target="_blank" href="https://www.foodnetwork.com/recipes/johnsonville-classic-meatballs-and-spaghetti-3362199">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 513.48</p>
+              <p class="item-data">Time: 35 minutes </p>
+              <p class="item-data">Diet Type: Balanced,High-Fiber</p>
+              <p class="item-data">Ingredients: 1 package (24 ounces) Johnsonville Classic Italian Meatballs,1 jar (24 ounces) pasta sauce,1 package (16 ounces) spaghetti,¼ cup grated Parmesan chees...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/493/49346adf760389adcc6876e08a34872e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Witch Finger Shortbread Cookies With Raspberry Jam Recipe</h1>
+                <a class="view-btn" target="_blank" href="http://www.seriouseats.com/recipes/2014/10/bloody-halloween-witch-finger-cookies-shortbread-and-jam.html">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 46.59</p>
+              <p class="item-data">Time: 120 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 recipe Classic Butter Shortbread Cookie Dough, uncooked (through step 1),6 tablespoons raspberry jam,24 sliced almonds</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/4d8/4d85b79ddbfd880aed714bb51337e6c4.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Daiquiri</h1>
+                <a class="view-btn" target="_blank" href="http://www.saveur.com/article/Recipes/Classic-Daiquiri">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 70.84</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1½ oz. Caña Brava rum,½ oz. simple syrup,¾ oz. fresh lime juice</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/215/215ac80ad861d2f03a0cb75fd021077e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Daiquiri</h1>
+                <a class="view-btn" target="_blank" href="http://food52.com/recipes/19417-classic-daiquiri">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 176.19</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 ounces light (white) rum,1 ounce fresh-squeezed lime juice,.5 ounces simple syrup</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/fd1/fd18629511380eaa33694d541fe0324c.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Margarita</h1>
+                <a class="view-btn" target="_blank" href="http://www.bbc.co.uk/food/recipes/classicmargarita_84327">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 131.06</p>
+              <p class="item-data">Time: 10 minutes </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 35ml/1¼fl oz reposado tequila,20ml/¾fl oz cointreau,35ml/1¼fl oz fresh lime juice,Handful ice cubes,Lime wedge, to garnish</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/c94/c946e1d95f77b058cec0ff6a32621f16.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Meatballs 'Polpettine'</h1>
+                <a class="view-btn" target="_blank" href="http://www.thedailymeal.com/recipes/classic-meatballs-polpettine-recipe">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 1199.32</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Carb</p>
+              <p class="item-data">Ingredients: 2 Pounds each of ground beef, veal, and pork,1 Cup chopped fresh flat-leaf parsley,4 cloves garlic, finely chopped,1/2 Cup grated Parmesan cheese,3 wh...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/f6c/f6cebb9375512ddacc9be655045d06fb.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Pancakes</h1>
+                <a class="view-btn" target="_blank" href="http://www.bbcgoodfood.com/recipes/1710/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 205.57</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 100.0g plain flour,1 large egg,oil or melted butter, for frying,300.0ml milk</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/69d/69d73dedec83f76caea8bf0ca460a74d" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Beef Meatballs recipes</h1>
+                <a class="view-btn" target="_blank" href="http://www.marthastewart.com/866430/classic-beef-meatballs">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 149.18</p>
+              <p class="item-data">Time: 45 minutes </p>
+              <p class="item-data">Diet Type: Low-Carb</p>
+              <p class="item-data">Ingredients: 2 tablespoons olive oil,2 pounds 80 percent lean ground beef,1 cup ricotta cheese,2 large eggs,1/2 cup dried breadcrumbs,1/4 cup chopped fresh flat-le...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/7df/7df299b62a7ee3a3075eb65df368d1ec.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Spicy Cayenne Shandy</h1>
+                <a class="view-btn" target="_blank" href="http://www.realsimple.com/food-recipes/browse-all-recipes/spicy-cayenne-shandy-00000000059980/index.html">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 167.21</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat</p>
+              <p class="item-data">Ingredients: kosher salt,1/2 teaspoon cayenne pepper,1 lemon wedge,2 12-ounce bottles lager beer,1 cup store-bought lemonade or Classic Lemonade</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/b35/b35ce8fb46c66b61f0fd87d6ac5a1998.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Salmon Classic</h1>
+                <a class="view-btn" target="_blank" href="http://www.eatingwell.com/recipes/salmon_classic.html">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 76.33</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Carb</p>
+              <p class="item-data">Ingredients: 16 slices smoked salmon,Dill sprigs, for garnish,16 slices party size pumpernickel bread,1/2 cup horseradish cream</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/abf/abf9061d95f8097c6360648e988cce9e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Guacamole</h1>
+                <a class="view-btn" target="_blank" href="http://www.cookstr.com/recipes/classic-guacamole">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 244.72</p>
+              <p class="item-data">Time: 30 minutes </p>
+              <p class="item-data">Diet Type: High-Fiber,Low-Carb</p>
+              <p class="item-data">Ingredients: 6 avocados, mashed,1 clove garlic, minced,¼ cup minced onion 60 mL,2 tbsp freshly squeezed lime juice 30 mL,Kosher or sea salt</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/15f/15f37bdc1f889b7784371147b11fcd01.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Penne with Red Pepper Alfredo Sauce</h1>
+                <a class="view-btn" target="_blank" href="http://www.myrecipes.com/recipe/ragu-penne-red-pepper-alfredo-sauce">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 527.68</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Balanced</p>
+              <p class="item-data">Ingredients: 1 jar (7.25 oz.) roasted red peppers,1 jar RAGÚ® Classic Alfredo Sauce,8 ounces penne pasta</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/ca4/ca41ae086739c95f5ef6140892781e5b.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Sazerac</h1>
+                <a class="view-btn" target="_blank" href="https://www.sippitysup.com/recipe/classic-sazerac/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 156.49</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 1 teaspoon absinthe, pernod or herbsaint,2 ounce cognac or rye whiskey,3 dash peychaud’s bitters,lemon twist as garnish</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/486/4868b47ae1025b2b4b7d495f00a31fcd.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Strawberry Smash-Up Ice Cream Sandwiches</h1>
+                <a class="view-btn" target="_blank" href="http://www.goodhousekeeping.com/food-recipes/a11321/strawberry-smash-up-ice-cream-sandwiches-recipe-rbk0612/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 199.84</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 batch Classic Chocolate-Chip Cookies,6 c. strawberry ice cream</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/419/419c878ed0f2b2d88ec22b7239a9781c.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Star of Jalisco Cocktail</h1>
+                <a class="view-btn" target="_blank" href="http://www.pbs.org/food/recipes/star-of-jalisco-cocktail/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 92.55</p>
+              <p class="item-data">Time: 134 minutes </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 2 ounces reposado tequila,1 ounce fresh lime juice,1/2 ounce agave syrup,2 dashes classic bitters,Pinch of grated nutmeg &amp; cinnamon,Orange slice &amp; all...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/de9/de9b722e4f11df21fc9186ea840e72a9.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Martini</h1>
+                <a class="view-btn" target="_blank" href="https://www.epicurious.com/recipes/food/views/classic-martini-56389382">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 332.70</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 4 ounces Beefeater gin,3/4 ounce Noilly Prat dry vermouth,1 lemon</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/a56/a5679e11b00b29e4d0b859e604f8137e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Classic Vinaigrette</h1>
+                <a class="view-btn" target="_blank" href="http://www.bbcgoodfood.com/recipes/2321/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 181.93</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Carb,Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 tsp Dijon mustard,2 tbsp red wine vinegar,6 tbsp light olive oil</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/4a1/4a1a37cf1f8bddb67b635b12b7011cb3.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Over the Moon Cake</h1>
+                <a class="view-btn" target="_blank" href="http://www.delish.com/cooking/recipe-ideas/recipes/a30525/over-the-moon-cake-recipe/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 674.51</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 1 box Betty Crocker Super Moist German Chocolate cake mix,⅓ c. grade-A dark maple syrup,½ c. pumpkin pie filling,1 tub Duncan Hines Classic Dark-Choco...</p>
+            </div>
+          </div>
+            
+            
+            
+            
+            
+
+
+
+
+
+        <!--
+        <div class="search-bar-body">
+            <div class="search-box">
+                <form action="/" method="POST" id="search-form">
+                    <button type = "submit "class="search-button" form="search-form" name = 'button'>
+                        <i class="fas fa-search"> </i>
+                    
+                    </button>
+                    <input type="text" class="search-input" placeholder="Type To Search Recipes..." name = 'search-textbox'>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="search-page-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="SortColumn('name')">Name</th>
+                        <th onclick="SortColumn('rating')">Rating</th>
+                        <th onclick="SortColumnCost('cost')">Cost</th>
+                        <th onclick="SortColumn('time')">Time</th>
+                    </tr>
+                </thead>
+                <tbody id="search-table">
+
+                </tbody>
+            </table>
+            
+        </div>-->
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Delicious Recipes</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="/static/stylesheets/searchpagestyles.css">
+    <script src="https://kit.fontawesome.com/ad5cc6e992.js" crossorigin="anonymous"></script>
+    <!--script type="text/javascript">
+        let data ='{"recipes": []}';
+        let text ='classic';
+    </script>
+    <script type="text/javascript" src="/static/javascripts/search.js"></script-->
+
+    </head>
+    <body background="/static/images/bg.jpg">
+        <div class = "main-title">
+            <h1 align = "center" > Recipe Paradise</h1>
+        </div>
+        <div class = "sub-tabs">
+            <h2> <a href="{{url_for('index')}}"> Home </a></h2>
+            <h2> <a href="{{url_for('trending')}}"> Trending Recipes </a> </h2>
+            <h2> <a href="{{url_for('classics')}}"> Classic Recipes </a> </h2>
+            <h2> <a href="{{url_for('lunch')}}"> Lunch Time </a> </h2>
+            <h2> <a href="{{url_for('desserts')}}"> Desserts </a> </h2>
+        </div>
+        
+        <div class="search-result" id="search-results-body">
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/bbd/bbd7245c9a8d06689c794d92b9247068.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Is Lemonade Coffee a Trend to Jump On?</h1>
+                <a class="view-btn" target="_blank" href="http://www.thedailymeal.com/recipes/lemonade-coffee-trend-jump-recipe">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 45.11</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 6 Ounces Iced coffee (cold-brewed or flash-brewed),.5 Ounce Simple syrup,.5 Lemon juice</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/023/023f8c70f9a36d6698b9e973856ffb3e.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">The Best Chocolate-Dipped Coconut Macaroons Recipe</h1>
+                <a class="view-btn" target="_blank" href="http://www.seriouseats.com/recipes/2015/12/the-best-coconut-macaroons-recipe.html">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 123.26</p>
+              <p class="item-data">Time: 120 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 6 ounces dried unsweetened, shredded coconut (about 1 1/2 cups; 170g),6 tablespoons (90mL) sweetened condensed milk or dulce de leche (see note above)...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/c76/c76b19b88a0a08f5a24b26ee1657e927.jpeg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Browned Butter Asparagus Risotto</h1>
+                <a class="view-btn" target="_blank" href="https://food52.com/recipes/1855-browned-butter-asparagus-risotto">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 614.32</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Balanced,High-Fiber</p>
+              <p class="item-data">Ingredients: 1 pound fresh asparagus,5 tablespoons unsalted butter,1 onion, finely chopped,1 1/2 cups arborio rice,1/2 cup white wine,4 cups chicken stock (homemad...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/728/728e3ee8c41f8d8c3d54b6791d3ed893.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Sidewalker</h1>
+                <a class="view-btn" target="_blank" href="https://www.epicurious.com/recipes/food/views/sidewalker-366726">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 221.48</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 1/4 cups Applejack,1 1/4 cups fresh lemon juice,3/4 cup pure maple syrup (preferably Grade B),6 tablespoons apple cider vinegar,4 cups chilled Hefew...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/b8d/b8dc18d9c6e3bbc6684511de6eee88d1.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Kale with Caramelized Onions</h1>
+                <a class="view-btn" target="_blank" href="http://honestcooking.com/kale-with-caramelized-onions/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 283.59</p>
+              <p class="item-data">Time: 30 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 3 tablespoons oil,2 medium sized red onions, thinly sliced,1 tablespoon freshly grated ginger,1½ teaspoons freshly ground cumin,1 teaspoon red cayenne...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/950/95076b4e1cbed1b8f3a89a0c7063dcb2.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Edamame Soup with Smoky Mushrooms</h1>
+                <a class="view-btn" target="_blank" href="https://www.tastingtable.com/entry_detail/chefs_recipes/8129/A_new_spin_on_edamame.htm">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 171.20</p>
+              <p class="item-data">Time: 65 minutes </p>
+              <p class="item-data">Diet Type: High-Fiber</p>
+              <p class="item-data">Ingredients: 4 cups water,One 3-inch piece kombu (japanese kelp),One 2-inch piece fresh ginger, scraped and sliced into ½-inch-thick coins,2 garlic cloves, smashed...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/6af/6afbcc45b9fc2951b235bdb24da0c764.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">The Secret Ingredient (Black Pepper): Sweet Cream Ice Cream with Strawberry-Black Pepper Sauce Recipe</h1>
+                <a class="view-btn" target="_blank" href="https://www.seriouseats.com/recipes/2011/02/the-secret-ingredient-black-pepper-sweet-crea.html">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 215.55</p>
+              <p class="item-data">Time: 10 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 pint sweet cream or vanilla ice cream,10 ounces frozen strawberries, thawed,12 turns on the peppermill of black pepper,1/4 cup granulated sugar,2 ta...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/1ce/1ce1368ec3429419cddf266266e38958.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Salted caramel banana tatins with crème fraîche ice cream</h1>
+                <a class="view-btn" target="_blank" href="https://www.bbcgoodfood.com/recipes/salted-caramel-banana-tatins-creme-fraiche-ice-cream">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 1976.05</p>
+              <p class="item-data">Time: 55 minutes </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 1 vanilla pod,200ml double cream,100ml milk,3 egg yolks,85g golden caster sugar,300ml full-fat crème fraîche,250g puff pastry,plain flour , for dustin...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/74c/74c1b3d8e8ef05dd49ab8c13bc79b617" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Recipe: Key Lime Smoothie Bowls</h1>
+                <a class="view-btn" target="_blank" href="http://www.thekitchn.com/recipe-key-lime-smoothie-bowls-229181">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 427.06</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 1 1/2 cups plain Greek yogurt,3 tablespoons honey,1 teaspoon vanilla extract,1/8 teaspoon fine salt,1 kiwi, peeled and diced,1/2 cup blueberries,2 tab...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/198/198b1dae7ce1a636b640109cfd09beb3.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Sunchoke and Kale Hash with Currants over Red Quinoa</h1>
+                <a class="view-btn" target="_blank" href="https://www.chowhound.com/recipes/sunchoke-kale-hash-currants-red-quinoa-31323">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 1007.28</p>
+              <p class="item-data">Time: 60 minutes </p>
+              <p class="item-data">Diet Type: High-Fiber</p>
+              <p class="item-data">Ingredients: 2/3 cups red quinoa,Kosher salt,8 ounces dinosaur kale,12 ounces sunchokes,1 red onion,4 ounces cremini mushrooms,1 lemon,2 sprigs fresh thyme,1 packe...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/968/968435a438ae801c04d2b43d3cfaae74" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Whipped Coffee Mochaccino</h1>
+                <a class="view-btn" target="_blank" href="http://www.eatingwell.com/recipe/279545/whipped-coffee-mochaccino/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 170.20</p>
+              <p class="item-data">Time: 5 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 cup milk (regular or nondairy; see Tip), divided,¼ cup instant coffee,3 tablespoons granulated sugar,1 teaspoon cocoa powder,¼ cup boiling water</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/90b/90b01d29400e345bf793452935e5f380.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Colombe’s Wheat-Free Lavender Apricot Crisp</h1>
+                <a class="view-btn" target="_blank" href="http://www.cookstr.com/recipes/colombersquos-wheat-free-lavender-apricot-crisp">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 240.54</p>
+              <p class="item-data">Time: 60 minutes </p>
+              <p class="item-data">Diet Type: Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 pounds ripe organic apricots (16 to 18 apricots), pitted,¾ cup organic cane sugar or maple sugar, plus extra for sprinkling,1 tablespoon plus 1 teas...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/0b7/0b708e2d2559704c71ebed7636710a06.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Greek Prawns With Feta Cheese</h1>
+                <a class="view-btn" target="_blank" href="https://food52.com/recipes/82693-greek-prawns-with-feta-cheese">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 371.53</p>
+              <p class="item-data">Time: 25 minutes </p>
+              <p class="item-data">Diet Type: High-Fiber</p>
+              <p class="item-data">Ingredients: 2 tablespoons olive oil,1 medium sized yellow onion, finely chopped,3 cloves garlic, sliced,1 (28 oz.) can diced tomatoes,1 teaspoon sugar,1/2 teaspoo...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/487/48750172b085970e5d09ea4b2e2e39e6.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Cereal Cocktails Are On the Rise</h1>
+                <a class="view-btn" target="_blank" href="http://www.myrecipes.com/extracrispy/cereal-cocktails-are-on-the-rise">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 83.92</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 1 ½ ounces Honey Nut Cheerios-infused dark rum,¾ ounces Honey syrup (I like Bernards Acadiana Honey),2 ounces Milk,2 dashes El Guapo Holiday Pie Bitte...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/fbb/fbbaa291e6f913c5563f54d6e2f3e920" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Cheesy Chaffle Sandwiches with Avocado &amp; Bacon</h1>
+                <a class="view-btn" target="_blank" href="http://www.eatingwell.com/recipe/278306/cheesy-chaffle-sandwiches-with-avocado-bacon/">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 269.23</p>
+              <p class="item-data">Time: 25 minutes </p>
+              <p class="item-data">Diet Type: Low-Carb</p>
+              <p class="item-data">Ingredients: 10 large eggs,1 ¼ cups shredded sharp Cheddar cheese,2 slices center-cut bacon, cooked and crumbled,½ teaspoon ground pepper,2 small avocados, sliced,...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/777/777869202d0adf95b0b50cbaa52ec333.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Cakespy: Bacon, Cereal, and Orange Juice Breakfast Cookies Recipe</h1>
+                <a class="view-btn" target="_blank" href="http://www.seriouseats.com/recipes/2009/09/bacon-cereal-and-orange-juice-breakfast-cookies-recipe.html">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 260.03</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 3/4 cup butter, room temperature,1/2 cup brown sugar,1 egg,2 tablespoons thawed frozen orange juice concentrate,1 tablespoon grated orange peel,1 1/4 ...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/e29/e2930ab518898d2285381fb3d5695df4.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Coconut Macaroon Sandwiches with Lime Curd</h1>
+                <a class="view-btn" target="_blank" href="https://www.epicurious.com/recipes/food/views/coconut-macaroon-sandwiches-with-lime-curd-51142230">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 268.19</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 1 (14-ounce) bag (5 1/3 cups) sweetened flaked coconut,1/2 cup sugar,1/2 cup all-purpose flour,1/4 teaspoon salt,4 large egg whites,1/4 teaspoon pure ...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/2eb/2eb6dacf5d6771034c6258baefe79aff.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Griddled salad jar</h1>
+                <a class="view-btn" target="_blank" href="http://www.bbcgoodfood.com/recipes/griddled-salad-jar">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 299.67</p>
+              <p class="item-data">Time: 60 minutes </p>
+              <p class="item-data">Diet Type: High-Fiber</p>
+              <p class="item-data">Ingredients: 1 aubergine, sliced,1 courgette, sliced,1 tbsp olive oil,2 tomatoes, roughly chopped,200g feta, roughly crumbled,240g can chickpeas,100g Kalamata oliv...</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/67e/67ed86aef14edf01139e820c868cbfce.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Prickly Peach</h1>
+                <a class="view-btn" target="_blank" href="http://www.thedailymeal.com/recipes/prickly-peach-recipe">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 88.77</p>
+              <p class="item-data">Time: No Data Found </p>
+              <p class="item-data">Diet Type: Low-Fat,Low-Sodium</p>
+              <p class="item-data">Ingredients: 2 Ounces wheat whiskey, such as Dry Fly,.75 Ounce pickled peach liquid,.25 Ounce Galliano,.25 Ounce Barrow’s Intense Ginger</p>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.edamam.com/web-img/416/4165a9d74d607de2da592fbc7e017c2f.jpg" alt="img">
+              <div class="flex-container">
+                <h1 class="title">Olive Oil Pound Cake with Glazed Apples</h1>
+                <a class="view-btn" target="_blank" href="https://www.tastingtable.com/entry_detail/chefs_recipes/2381/A_chef_makes_the_case_for_olive_oil_cake.htm">View Recipe</a>
+              </div>
+              <p class="item-data">Calories per serving: 912.58</p>
+              <p class="item-data">Time: 303 minutes </p>
+              <p class="item-data">Diet Type: No Data Found</p>
+              <p class="item-data">Ingredients: 3 cups all-purpose flour,1½ tablespoons baking powder,½ teaspoon salt,4 large eggs,1¼ cups sugar,Zest of 2 lemons (about 2 tablespoons),1½ cups extra-...</p>
+            </div>
+          </div>
