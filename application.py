@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 from py_edamam import Edamam  # Fixed indentation issue
-
+from . models import *
 app = Flask(__name__)
 
 # Database configuration (uncomment if needed)
@@ -52,18 +52,9 @@ def lunch():
     return render_template("lunch.html")
 
 # Uncomment the following block if using SQLAlchemy for recipes
-# use postegerss 
+# use postegerss when ready 
 """
-class Recipe(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), unique=True, nullable=False)
-    page_link = db.Column(db.String(10000), unique=True, nullable=False)
-    rating = db.Column(db.Integer)
-    cost = db.Column(db.String(10), nullable=False)
-    time = db.Column(db.Integer)  # in minutes
 
-    def __repr__(self):
-        return f"{self.name} - {self.page_link}"
 
 @app.route('/recipes', methods=['GET'])
 def get_recipes():
