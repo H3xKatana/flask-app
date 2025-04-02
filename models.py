@@ -22,3 +22,5 @@ class Item(db.Model):
     rating = db.Column(db.Integer)
     cost = db.Column(db.String(10), nullable=False)
     time = db.Column(db.Integer)  # in minutes
+    tags = db.Column(db.Integer) # for tags
+    
