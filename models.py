@@ -32,4 +32,6 @@ class User(db.Model):
     password = db.Column(db.String(128), nullable=False)  # store hashed passwords
 
     def __repr__(self):
+
         return f"User: {self.username}"
+
