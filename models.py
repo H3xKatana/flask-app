@@ -22,3 +22,14 @@ class Item(db.Model):
     rating = db.Column(db.Integer)
     cost = db.Column(db.String(10), nullable=False)
     time = db.Column(db.Integer)  # in minutes
+
+
+# adding user table for authentication 
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    password = db.Column(db.String(128), nullable=False)  # store hashed passwords
+
+    def __repr__(self):
+        return f"User: {self.username}"
